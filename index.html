@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VayaSoft - Your Trusted Odoo Partner</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #0047AB;
+            --secondary: #FF6B00;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #0047AB 0%, #0066CC 100%);
+        }
+        .btn-primary {
+            background-color: var(--secondary);
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .service-card {
+            transition: all 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <div class="flex items-center">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjMDA0N0FCIiBkPSJNMTIgMkw2IDZWMTBMMTIgMTRMMTggMTBWNkwxMiAyWiIvPjxwYXRoIGZpbGw9IiNGRjZCMDAiIGQ9Ik02IDEwVjE4TDEyIDIyTDE4IDE4VjEwTDEyIDE0TDYgMTBaIi8+PC9zdmc+" class="h-8 w-8" alt="VayaSoft Logo">
+                        <span class="ml-2 text-xl font-bold text-gray-800">VayaSoft</span>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="flex items-center space-x-8">
+                        <a href="#home" class="text-gray-600 hover:text-secondary">Home</a>
+                        <a href="#services" class="text-gray-600 hover:text-secondary">Services</a>
+                        <a href="#industries" class="text-gray-600 hover:text-secondary">Industries</a>
+                        <a href="#odoo-apps" class="text-gray-600 hover:text-secondary">Odoo Apps</a>
+                        <a href="#about" class="text-gray-600 hover:text-secondary">About</a>
+                        <a href="#contact" class="btn-primary text-white px-6 py-2 rounded-full font-medium">Contact Us</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-600">
+                        <i class="bi bi-list text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-20">
+        <div class="gradient-bg">
+            <div class="max-w-7xl mx-auto px-4 py-20">
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/2 text-white">
+                        <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">Empower Your Business with Odoo’s All-in-One Apps and Expert Solutions.</h1>
+                        <p class="text-xl mb-8">As a trusted Odoo partner, we bring tailored ERP, web development, and marketing solutions to streamline your operations.</p>
+                        <button class="btn-primary text-white px-8 py-3 rounded-full font-medium text-lg">Schedule a Demo</button>
+                    </div>
+                    <div class="md:w-1/2 mt-10 md:mt-0">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80" alt="Dashboard" class="rounded-lg shadow-2xl">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-16">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="service-card bg-white p-6 rounded-lg shadow">
+                    <i class="bi bi-gear text-4xl text-primary"></i>
+                    <h3 class="text-xl font-semibold mt-4">Odoo ERP Solutions</h3>
+                    <p class="mt-2 text-gray-600">Streamline your business operations with our customized Odoo implementations.</p>
+                </div>
+                <div class="service-card bg-white p-6 rounded-lg shadow">
+                    <i class="bi bi-laptop text-4xl text-primary"></i>
+                    <h3 class="text-xl font-semibold mt-4">Web Development</h3>
+                    <p class="mt-2 text-gray-600">Create powerful web applications tailored to your business needs.</p>
+                </div>
+                <div class="service-card bg-white p-6 rounded-lg shadow">
+                    <i class="bi bi-bar-chart text-4xl text-primary"></i>
+                    <h3 class="text-xl font-semibold mt-4">Big Data Solutions</h3>
+                    <p class="mt-2 text-gray-600">Transform data into actionable insights for improved decision-making.</p>
+                </div>
+                <div class="service-card bg-white p-6 rounded-lg shadow">
+                    <i class="bi bi-tools text-4xl text-primary"></i>
+                    <h3 class="text-xl font-semibold mt-4">AI & ML Solutions</h3>
+                    <p class="mt-2 text-gray-600">Unlock new possibilities with intelligent, data-driven technologies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Section -->
+    <section class="py-20 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-16">Why You’ll Love VayaSoft's ERP System</h2>
+            <p class="text-center mb-8">We help businesses enhance efficiency with tailored ERP solutions.</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="font-semibold">10+ Industries Served</h3>
+                    <p class="text-gray-600">We cater to multiple industries ensuring tailored solutions.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="font-semibold">50+ Happy Clients</h3>
+                    <p class="text-gray-600">Our clients have seen remarkable transformations.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="font-semibold">Expert Consulting</h3>
+                    <p class="text-gray-600">Our team of experts is dedicated to your success.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gray-50 text-center">
+        <h2 class="text-3xl font-bold mb-6">Ready to Transform Your Business?</h2>
+        <a href="#contact" class="btn-primary text-white px-8 py-3 rounded-full font-medium text-lg">Request a Demo</a>
+    </section>
+
+    <!-- Industries Section -->
+    <section id="industries" class="py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-16">Industries We Serve</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow text-center">
+                    <img src="https://via.placeholder.com/150" alt="Retail" class="mb-4">
+                    <h3 class="text-lg font-semibold">Retail</h3>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow text-center">
+                    <img src="https://via.placeholder.com/150" alt="Healthcare" class="mb-4">
+                    <h3 class="text-lg font-semibold">Healthcare</h3>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow text-center">
+                    <img src="https://via.placeholder.com/150" alt="Manufacturing" class="mb-4">
+                    <h3 class="text-lg font-semibold">Manufacturing</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Odoo Apps Section -->
+    <section id="odoo-apps" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-16">Odoo Apps to Simplify Your Business Operations</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <img src="https://via.placeholder.com/50" alt="CRM" class="mb-4">
+                    <h3 class="font-semibold">CRM</h3>
+                    <p>Manage customer relationships efficiently.</p>
+                    <button class="btn-primary text-white px-4 py-2 rounded-full">Learn More</button>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <img src="https://via.placeholder.com/50" alt="Inventory" class="mb-4">
+                    <h3 class="font-semibold">Inventory</h3>
+                    <p>Track inventory levels and sales orders.</p>
+                    <button class="btn-primary text-white px-4 py-2 rounded-full">Learn More</button>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <img src="https://via.placeholder.com/50" alt="Accounting" class="mb-4">
+                    <h3 class="font-semibold">Accounting</h3>
+                    <p>Streamline your financial operations.</p>
+                    <button class="btn-primary text-white px-4 py-2 rounded-full">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-16">Our Journey to Transform Business Operations</h2>
+            <p>VayaSoft empowers businesses to achieve their full potential with innovative, tailored solutions.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-16">Get in Touch</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow">
+                    <form id="contact-form" class="space-y-6">
+                        <div>
+                            <label class="block text-gray-700 mb-2">Name</label>
+                            <input type="text" class="w-full px-4 py-2 border rounded" required>
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 mb-2">Email</label>
+                            <input type="email" class="w-full px-4 py-2 border rounded" required>
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 mb-2">Message</label>
+                            <textarea class="w-full px-4 py-2 border rounded h-32" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary text-white px-8 py-3 rounded-full font-medium w-full">Send Message</button>
+                    </form>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow">
+                    <h3 class="text-xl font-semibold mb-6">Contact Information</h3>
+                    <div class="space-y-4">
+                        <p class="flex items-center"><i class="bi bi-geo-alt text-primary mr-3"></i> 123 Business Street, Tech City, 12345</p>
+                        <p class="flex items-center"><i class="bi bi-telephone text-primary mr-3"></i> +1 (234) 567-8900</p>
+                        <p class="flex items-center"><i class="bi bi-envelope text-primary mr-3"></i> contact@vayasoft.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">About VayaSoft</h4>
+                    <p class="text-gray-400">Your trusted partner for digital transformation and business solutions.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#industries">Industries</a></li>
+                        <li><a href="#odoo-apps">Odoo Apps</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Odoo ERP Solutions</li>
+                        <li>Web Development</li>
+                        <li>Big Data Solutions</li>
+                        <li>AI & ML Solutions</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Connect With Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="bi bi-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
+                <p>&copy; 2023 VayaSoft. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        mobileMenuButton.addEventListener('click', () => {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        const contactForm = document.getElementById('contact-form');
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you for your message. We will get back to you soon!');
+            contactForm.reset();
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 0) {
+                nav.classList.add('shadow-lg');
+            } else {
+                nav.classList.remove('shadow-lg');
+            }
+        });
+    </script>
+<script>document.body.addEventListener('wheel', e => { if (!e.ctrlKey) return; e.preventDefault(); return }, { passive: false })</script>
+	</body>
+</html>
